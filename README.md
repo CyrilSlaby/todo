@@ -61,15 +61,15 @@ This is a Todo Application built using NestJS and TypeScript. The application is
 After starting the application, you can run database migrations and seeds using the following commands:
 Generate a new migration:
 
-    docker exec -it amcef-main-api-1 npm run migration:generate -- ./src/migrations/NewMigration -d ./src/data-source.ts
+    docker exec -it amcef-api-1 npm run migration:generate -- ./src/migrations/NewMigration -d ./src/data-source.ts
 
 ### Run all migrations:
 
-    docker exec -it amcef-main-api-1 npm run migration:run
+    docker exec -it amcef-api-1 npm run migration:run
 
 ### Run database seeds:
 
-    docker exec -it amcef-main-api-1 npx ts-node ./src/seeds/seeder.ts
+    docker exec -it amcef-api-1 npx ts-node ./src/seeds/seeder.ts
 
 
 ### Error Handling
